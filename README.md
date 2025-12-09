@@ -1,2 +1,2 @@
-# Kind_Cluster
+# KindCluster
 Kind cluster and Load test scripts 
