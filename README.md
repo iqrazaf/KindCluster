@@ -1,4 +1,4 @@
-----------------(PART-1-CLuster Deployment) ---------------------------------
+## ----------------(PART-1-CLuster Deployment) ---------------------------------
 # KindCluster 
 Following is a cleaned, end-to-end, reproducible guide that combines kind cluster setup and k6 load test into one workflow.
 
@@ -16,13 +16,13 @@ Set up a local Kubernetes cluster with:
 
 5: A k6 spike-load test (s1_spike.js) that hits those three apps.
 
-----------------(PART-2-CLuster Optimization Problem) ---------------------------------
+## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
 It includes 3 parts: 
 (A) Optimization Problem (Optimization.py)
 (B) Ablation Study (Ablation_study.py)
 (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
 
-## Terminology note: STIGs vs STIK
+# Terminology note: STIGs vs STIK
 
 You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
@@ -58,7 +58,8 @@ At a high level:
 - Prints the best selected placement and saves a Pareto plot as an image.
 
 -----------------------------------END (A)-----------------------------
-(B) Ablation Study (Ablation_study.py)
+
+## (B) Ablation Study (Ablation_study.py)
 # Ablation Study: Causal vs Non-Causal Placement Optimization (Optuna + STIGs)
 
 This section includes an ablation script that compares **four objective variants** for microservice placement across cluster nodes. The goal is to show how each causal component contributes to better interference-aware placements.
@@ -90,7 +91,7 @@ Each mode produces:
 
 
 -----------------------------------END (B)-----------------------------
-(C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
+## (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
 # Baseline Comparison: Optuna vs GA vs RL (All Evaluated with Full-Causal Metric)
 
 This script (`baseline_comparison.py`) compares **four placement strategies** for microservices across cluster nodes. The point is not just “who optimizes fastest,” but **who finds placements that remain good under a consistent interference-aware evaluation**.
