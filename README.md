@@ -19,7 +19,7 @@ Set up a local Kubernetes cluster with:
 ## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
 # Service Optimization 
 It includes 3 parts: 
-(A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)
+(A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS) (cross_app_analysis.py)
 (A-2)Optimization Problem (Optimization.py)
 (B) Ablation Study (Ablation_study.py)
 (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
@@ -30,7 +30,7 @@ You will see both **STIGs** and **STIK** in the code and folder names (for examp
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
 “STIK” is just a naming variation in the implementation, not a different method.
 
-## (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)
+## (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)  (cross_app_analysis.py)
 PN/PS/PNS Table Generator (Cross-App Causal Probabilities from Traces): 
 
 This script builds a **cross-application PN/PS/PNS probability table** from cleaned distributed traces. The output CSV is used later by the placement optimizers to quantify **directional interference likelihood** between services across different apps (for example Bookinfo ↔ TeaStore ↔ Sock-Shop).
