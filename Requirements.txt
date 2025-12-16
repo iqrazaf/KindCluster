@@ -1,0 +1,8 @@
+## Requirements
+### Python
+- Python 3.9+ recommended
+
+### Install packages
+
+```bash
+pip install optuna pandas numpy matplotlib networkx
