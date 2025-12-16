@@ -23,7 +23,7 @@ It includes 3 parts:
 (B) Ablation Study (Ablation_study.py)
 (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
 
-# Terminology note: STIGs vs STIK:
+Terminology note: STIGs vs STIK:
 
 You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
