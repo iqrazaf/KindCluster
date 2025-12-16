@@ -22,7 +22,7 @@ It includes 3 parts:
 (B) Ablation Study (Ablation_study.py)
 (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
 
-# Terminology note: STIGs vs STIK
+# Terminology note: STIGs vs STIK:
 
 You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
@@ -32,7 +32,7 @@ They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs
 # Service Optimization 
 (A) Optimization Problem (Optimization.py)
 
-# Interference-Aware Service Placement Optimizer (Optuna + STIGs)
+#Interference-Aware Service Placement Optimizer (Optuna + STIGs): 
 
 This step contains `Optimization.py`, a reproducible script that searches for a **microservice-to-node placement** that minimizes:
 
@@ -43,7 +43,7 @@ It uses **Optuna (NSGA-II)** to produce a **Pareto front** for the interference�
 
 ---
 
-## What the script does
+# What the script does
 
 At a high level:
 )
@@ -60,7 +60,7 @@ At a high level:
 -----------------------------------END (A)-----------------------------
 
 ## (B) Ablation Study (Ablation_study.py)
-# Ablation Study: Causal vs Non-Causal Placement Optimization (Optuna + STIGs)
+Ablation Study: Causal vs Non-Causal Placement Optimization (Optuna + STIGs):
 
 This section includes an ablation script that compares **four objective variants** for microservice placement across cluster nodes. The goal is to show how each causal component contributes to better interference-aware placements.
 
@@ -71,7 +71,7 @@ The script uses **Optuna (NSGA-II)** to optimize a **two-objective** problem in 
 
 ---
 
-## What this script demonstrates (ablation idea)
+# What this script demonstrates (ablation idea)
 
 The script runs the same optimization loop under four modes:
 
@@ -92,7 +92,7 @@ Each mode produces:
 
 -----------------------------------END (B)-----------------------------
 ## (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
-# Baseline Comparison: Optuna vs GA vs RL (All Evaluated with Full-Causal Metric)
+ Baseline Comparison: Optuna vs GA vs RL (All Evaluated with Full-Causal Metric):
 
 This script (`baseline_comparison.py`) compares **four placement strategies** for microservices across cluster nodes. The point is not just “who optimizes fastest,” but **who finds placements that remain good under a consistent interference-aware evaluation**.
 
