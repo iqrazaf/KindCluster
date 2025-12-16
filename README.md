@@ -17,6 +17,7 @@ Set up a local Kubernetes cluster with:
 5: A k6 spike-load test (s1_spike.js) that hits those three apps.
 
 ## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
+# Service Optimization 
 It includes 3 parts: 
 (A) Optimization Problem (Optimization.py)
 (B) Ablation Study (Ablation_study.py)
@@ -28,8 +29,6 @@ You will see both **STIGs** and **STIK** in the code and folder names (for examp
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
 “STIK” is just a naming variation in the implementation, not a different method.
 
-
-# Service Optimization 
 (A) Optimization Problem (Optimization.py)
 
 #Interference-Aware Service Placement Optimizer (Optuna + STIGs): 
