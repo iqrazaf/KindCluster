@@ -43,7 +43,7 @@ It uses **Optuna (NSGA-II)** to produce a **Pareto front** for the interferenceâ
 
 ---
 
-# What the script does
+#What the script does:
 
 At a high level:
 )
@@ -71,7 +71,7 @@ The script uses **Optuna (NSGA-II)** to optimize a **two-objective** problem in 
 
 ---
 
-# What this script demonstrates (ablation idea)
+#What this script demonstrates:
 
 The script runs the same optimization loop under four modes:
 
