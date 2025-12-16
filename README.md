@@ -29,7 +29,7 @@ You will see both **STIGs** and **STIK** in the code and folder names (for examp
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
 “STIK” is just a naming variation in the implementation, not a different method.
 
-(A) Optimization Problem (Optimization.py)
+## (A) Optimization Problem (Optimization.py)
 
 #Interference-Aware Service Placement Optimizer (Optuna + STIGs): 
 
