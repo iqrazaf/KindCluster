@@ -1,7 +1,7 @@
-## Terminology note: STIGs vs STIK
-
-You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
-They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
-“STIK” is just a naming variation in the implementation, not a different method.
-
 ## Interference Graphs for Scenario(S1) under study
+The resulting STIG set is stored as multiple serialized NetworkX graphs (*.gpickle) under the stigs_graphs/ folder. 
+The files follow a consistent naming scheme such as:
+STIK_worker1_product-page_web-ui_<k>.gpickle, where <k> is the snapshot index (e.g., 0, 1, 2, …).
+Here, worker1 indicates the cluster-node context under which the STIG snapshot was produced, and the product-page_web-ui portion encodes  the selected source–target pair for this case-study.
+
+Note on naming: the prefix STIK in filenames refers to the same artifact as STIGs in the paper (Spatio-Temporal Interference Graphs). It is a naming variation in the implementation, not a different model.
