@@ -1,4 +1,4 @@
-# KindCluster
+# KindCluster (PART-1-CLuster Deployment)
 Following is a cleaned, end-to-end, reproducible guide that combines kind cluster setup and k6 load test into one workflow.
 
 It assumes a Ubuntu-like VM where you have sudo. 
