@@ -19,7 +19,8 @@ Set up a local Kubernetes cluster with:
 ## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
 # Service Optimization 
 It includes 3 parts: 
-(A) Optimization Problem (Optimization.py)
+(A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)
+(A-2)Optimization Problem (Optimization.py)
 (B) Ablation Study (Ablation_study.py)
 (C) Baseline Comparison with Optuna Optimizer method (baseline_comparison.py)
 
@@ -29,7 +30,33 @@ You will see both **STIGs** and **STIK** in the code and folder names (for examp
 They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
 “STIK” is just a naming variation in the implementation, not a different method.
 
-## (A) Optimization Problem (Optimization.py)
+## (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)
+PN/PS/PNS Table Generator (Cross-App Causal Probabilities from Traces): 
+
+This script builds a **cross-application PN/PS/PNS probability table** from cleaned distributed traces. The output CSV is used later by the placement optimizers to quantify **directional interference likelihood** between services across different apps (for example Bookinfo ↔ TeaStore ↔ Sock-Shop).
+
+It reads span-level traces, detects anomalous spans, and then computes **cross-app causal probabilities** using temporal co-occurrence within a time window Δt.
+
+---
+What this script produces: 
+
+**Output file**
+- `Probability_Table/cross_shop_PNS_T3.csv`
+
+Each row represents a directed pair **X → Y**, where anomalies in Y are temporally associated with anomalies in X.
+
+Columns include:
+- `X`, `Y`
+- `App(X)`, `App(Y)`
+- `P(Y|X)` and `P(Y|X')`
+- `PNS`, `PN`, `PS`
+- `X_events`, `Y_events`
+
+These values are written as **percentages (0–100)** in the output.
+
+
+-----------------------------------END (A-1)-----------------------------
+## (A-2) Optimization Problem (Optimization.py)
 
 #Interference-Aware Service Placement Optimizer (Optuna + STIGs): 
 
@@ -56,7 +83,7 @@ At a high level:
   - Objective 2: sum of p95 latencies + network penalties for cross-node communication edges
 - Prints the best selected placement and saves a Pareto plot as an image.
 
------------------------------------END (A)-----------------------------
+-----------------------------------END (A-2)-----------------------------
 
 ## (B) Ablation Study (Ablation_study.py)
 Ablation Study: Causal vs Non-Causal Placement Optimization (Optuna + STIGs):
