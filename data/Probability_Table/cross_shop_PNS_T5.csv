@@ -1,0 +1,9 @@
+X,Y,App(X),App(Y),P(Y|X),P(Y|X'),PNS,PN,PS,X_events,Y_events
+details,teastore-webui,bookinfo,teastore,100.0,0.0,100.0,100.0,100.0,403,3626
+teastore-webui,productpage,teastore,bookinfo,66.69,0.0,66.69,100.0,66.69,3626,1646
+reviews,teastore-webui,bookinfo,teastore,100.0,5.41,94.59,94.59,100.0,858,3626
+teastore-webui,details,teastore,bookinfo,96.86,6.2,90.65,93.6,96.65,3626,403
+ratings,teastore-webui,bookinfo,teastore,100.0,14.78,85.22,85.22,100.0,254,3626
+teastore-webui,reviews,teastore,bookinfo,99.72,17.95,81.78,82.0,99.66,3626,858
+teastore-webui,ratings,teastore,bookinfo,99.5,25.2,74.31,74.68,99.34,3626,254
+productpage,teastore-webui,bookinfo,teastore,100.0,27.58,72.42,72.42,100.0,1646,3626

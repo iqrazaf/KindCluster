@@ -1,0 +1,15 @@
+X,Y,App(X),App(Y),P(Y|X),P(Y|X'),PNS,PN,PS,X_events,Y_events
+front-end,ratings,sock-shop,bookinfo,100.0,0.0,100.0,100.0,100.0,12,249
+front-end,reviews,sock-shop,bookinfo,100.0,0.0,100.0,100.0,100.0,12,348
+front-end,teastore-webui,sock-shop,teastore,100.0,0.0,100.0,100.0,100.0,12,2981
+ratings,teastore-webui,bookinfo,teastore,100.0,0.0,100.0,100.0,100.0,249,2981
+reviews,teastore-webui,bookinfo,teastore,100.0,0.0,100.0,100.0,100.0,348,2981
+front-end,details,sock-shop,bookinfo,91.67,0.0,91.67,100.0,91.67,12,17
+teastore-webui,details,teastore,bookinfo,77.26,0.0,77.26,100.0,77.26,2981,17
+teastore-webui,reviews,teastore,bookinfo,95.57,7.76,87.81,91.88,95.2,2981,348
+teastore-webui,ratings,teastore,bookinfo,97.72,9.64,88.08,90.14,97.48,2981,249
+reviews,front-end,bookinfo,sock-shop,82.47,8.33,74.14,89.9,80.88,348,12
+teastore-webui,front-end,teastore,sock-shop,78.6,8.33,70.26,89.4,76.65,2981,12
+ratings,front-end,bookinfo,sock-shop,77.91,8.33,69.58,89.3,75.9,249,12
+details,teastore-webui,bookinfo,teastore,100.0,21.2,78.8,78.8,100.0,17,2981
+details,front-end,bookinfo,sock-shop,100.0,25.0,75.0,75.0,100.0,17,12
