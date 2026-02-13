@@ -4,7 +4,12 @@ Following is a cleaned, end-to-end, reproducible guide that combines kind cluste
 
 It assumes a Ubuntu-like VM where you have sudo. 
 
-Set up a local Kubernetes cluster with:
+File that includes commands to create a kind cluster (kind_cluster.sh) : 
+chmod +x run_kind_cluster.sh
+./run_kind_cluster.sh
+
+
+  #What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
 
 1: kind + 1 control-plane + 2 workers
 
@@ -13,8 +18,10 @@ Set up a local Kubernetes cluster with:
 3: Deploy Sock Shop, TeaStore, and Bookinfo apps
 
 4: A single Istio Gateway exposing /sock, /tea, /book via http://localhost
+If you would like more detail about commands, please follow Kind_Cluster_script.pdf.
 
-5: A k6 spike-load test (s1_spike.js) that hits those three apps.
+ #What the load_test.sh is doing:
+ A k6 spike-load test (s1_spike.js) that hits those three apps.
 
 ## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
 # Service Optimization 
