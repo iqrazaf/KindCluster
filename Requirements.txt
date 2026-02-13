@@ -1,8 +1,24 @@
-## Requirements
-### Python
-- Python 3.9+ recommended
+INSTALL file
+## 0) Prerequisites
 
-### Install packages
+### Host requirements
+- Linux or macOS recommended (Windows works via WSL2)
+- 8+ CPU cores, 16+ GB RAM recommended (minimum 4 cores / 8 GB)
+- Docker must be running
+
+### Required tools (versions are suggestions)
+- Docker (20+)
+- kubectl (1.26+)
+- kind (0.20+)
+- helm (3.10+)
+- istioctl (1.18+ or match your Istio manifests)
+- jq (optional, but useful)
+
+Verify tools:
 
 ```bash
-pip install optuna pandas numpy matplotlib networkx
+docker --version
+kubectl version --client
+kind version
+helm version
+istioctl version
