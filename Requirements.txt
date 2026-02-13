@@ -1,8 +1,7 @@
-INSTALL file
-## 0) Prerequisites
+To create a Kind-Cluster, perform a load test and collect all the data (present in a data folder) through a Linux Machine, following are the Prerequisites:
 
 ### Host requirements
-- Linux or macOS recommended (Windows works via WSL2)
+- Linux recommended
 - 8+ CPU cores, 16+ GB RAM recommended (minimum 4 cores / 8 GB)
 - Docker must be running
 
