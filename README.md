@@ -39,8 +39,8 @@ Run the following commands to generate the load on the cluster.
 chmod +x load_test.sh
 
 ./load_test.sh
-## ----------------(PART-2-CLuster Optimization Problem) on any Python tool (not on VM)---------------------------------
-Use the existing collected data in the data folder:
+## ----------------(PART-2-CLuster Optimization Problem) on any Python tool (not on VM)-----------------
+Use the existing collected data in the data and stigs_graphs folder:
 # Service Optimization 
 It includes 3 parts: 
 (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS) (cross_app_analysis.py)
@@ -51,8 +51,9 @@ It includes 3 parts:
 Terminology note: STIGs vs STIK:
 
 You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
-They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  If you want to generate new STIGs graphs, follow our previous work for STIGs generation (https://dl.acm.org/doi/abs/10.1145/3629527.3653664) for more details.  
-“STIK” is just a naming variation in the implementation, not a different method.
+They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**. “STIK” is just a naming variation in the implementation, not a different method. 
+
+If you want to generate new STIGs graphs, follow our previous work for STIGs generation (https://dl.acm.org/doi/abs/10.1145/3629527.3653664) for more details.  
 
 ## (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)  (cross_app_analysis.py)
 PN/PS/PNS Table Generator (Cross-App Causal Probabilities from Traces): 
