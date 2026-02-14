@@ -30,7 +30,7 @@ chmod +x run_kind_cluster.sh
 
 If you would like more details about commands, please follow Kind_Cluster_script.pdf.
 
-#  Load test to collect monitoring data (already exists in the data folder for paper experiments)
+#  Load test to collect monitoring data (dataset already exists in the data folder for paper experiments)
 What the load_test.sh is doing: A k6 spike-load test (s1_spike.js) that hits those three apps.
  
 Run the following commands to generate the load on the cluster. 
