@@ -39,6 +39,7 @@ Run the following commands to generate the load on the cluster.
 chmod +x load_test.sh
 
 ./load_test.sh
+If you would like more details about commands, please follow Load_test_script.pdf.
 ## ----------------(PART-2-CLuster Optimization Problem) on any Python tool (not on VM)-----------------
 Use the existing collected data in the data and stigs_graphs folder:
 # Service Optimization 
