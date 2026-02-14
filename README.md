@@ -10,16 +10,16 @@ It includes:
 4. **Ablation and baselines**: quantify contributions and competitiveness  
 ---
 
-## Quick Start (2 commands)
+## To deploy a fresh cluster and collect monitoring data (2 commands)
 This step is written for an **Ubuntu-like VM** with `sudo` access.
 ### 1) Deploy cluster + apps
 
-```bash
+bash 
 chmod +x run_kind_cluster.sh
+
 ./run_kind_cluster.sh
 
-
-#What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
+## What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
 
 1: kind + 1 control-plane + 2 workers
 
@@ -32,10 +32,12 @@ chmod +x run_kind_cluster.sh
 If you would like more details about commands, please follow Kind_Cluster_script.pdf.
 
 #  Load test to collect monitoring data (already exists in the data folder for paper experiments )
- #What the load_test.sh is doing:
- A k6 spike-load test (s1_spike.js) that hits those three apps.
- Run the following commands to generate the load on the cluster. 
+What the load_test.sh is doing: A k6 spike-load test (s1_spike.js) that hits those three apps.
+ 
+Run the following commands to generate the load on the cluster. 
+ 
 chmod +x load_test.sh
+
 ./load_test.sh
 ## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
 # Service Optimization 
