@@ -10,8 +10,8 @@ It includes:
 4. **Ablation and baselines**: quantify contributions and competitiveness  
 ---
 
-## To deploy a fresh cluster and collect monitoring data (2 commands)
-This step is written for an **Ubuntu-like VM** with `sudo` access.
+## To deploy a fresh cluster
+This step is written for an **Ubuntu-like VM** with `sudo` access. VM is only for deploying a cluster and collecting data. 
 ### 1) Deploy cluster + apps
 
 bash 
@@ -31,7 +31,7 @@ chmod +x run_kind_cluster.sh
 
 If you would like more details about commands, please follow Kind_Cluster_script.pdf.
 
-#  Load test to collect monitoring data (already exists in the data folder for paper experiments )
+#  Load test to collect monitoring data (already exists in the data folder for paper experiments)
 What the load_test.sh is doing: A k6 spike-load test (s1_spike.js) that hits those three apps.
  
 Run the following commands to generate the load on the cluster. 
@@ -39,7 +39,8 @@ Run the following commands to generate the load on the cluster.
 chmod +x load_test.sh
 
 ./load_test.sh
-## ----------------(PART-2-CLuster Optimization Problem) ---------------------------------
+## ----------------(PART-2-CLuster Optimization Problem) on any Python tool (not on VM)---------------------------------
+Use the existing collected data in the data folder:
 # Service Optimization 
 It includes 3 parts: 
 (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS) (cross_app_analysis.py)
