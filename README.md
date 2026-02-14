@@ -14,7 +14,6 @@ It includes:
 This step is written for an **Ubuntu-like VM** with `sudo` access. VM is only for deploying a cluster and collecting data. 
 ### 1) Deploy cluster + apps
 
-bash 
 chmod +x run_kind_cluster.sh
 
 ./run_kind_cluster.sh
