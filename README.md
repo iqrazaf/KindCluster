@@ -19,7 +19,7 @@ chmod +x run_kind_cluster.sh
 
 ./run_kind_cluster.sh
 
-## What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
+## What the kind_cluster.sh is doing:
 
 1: kind + 1 control-plane + 2 workers
 
@@ -51,7 +51,7 @@ It includes 3 parts:
 Terminology note: STIGs vs STIK:
 
 You will see both **STIGs** and **STIK** in the code and folder names (for example, `STIK_DIR`).  
-They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  
+They refer to the **same concept**: **Spatio-Temporal-Interference-Graphs (STIGs)**.  If you want to generate new STIGs graphs, follow our previous work for STIGs generation (https://dl.acm.org/doi/abs/10.1145/3629527.3653664) for more details.  
 “STIK” is just a naming variation in the implementation, not a different method.
 
 ## (A-1) Cross Application Analysis for Causal Probabilities (PS,PN,PNS)  (cross_app_analysis.py)
