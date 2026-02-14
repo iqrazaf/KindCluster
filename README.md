@@ -1,15 +1,25 @@
-## ----------------(PART-1-CLuster Deployment) ---------------------------------
-# KindCluster 
-Following is a cleaned, end-to-end, reproducible guide that combines kind cluster setup and k6 load test into one workflow.
+# KindCluster Artifact: Interference-Resilient Microservices Placement (End-to-End Guide)
 
-It assumes a Ubuntu-like VM where you have sudo. 
+This repository provides a reproducible artifact for evaluating **interference-aware microservice placement** in a local Kubernetes cluster.
 
-Run the following commands to create a kind cluster (kind_cluster.sh): 
-# chmod +x run_kind_cluster.sh
-# ./run_kind_cluster.sh
+It includes:
+
+1. **Cluster deployment**: Kind (1 control-plane + 2 workers) + Istio + 3 microservice applications  
+2. **Load testing**: k6 spike-load to generate latency and monitoring signals  
+3. **Optimization pipeline**: cross-application causal probabilities (PN/PS/PNS) + STIGs + Optuna (NSGA-II)  
+4. **Ablation and baselines**: quantify contributions and competitiveness  
+---
+
+## Quick Start (2 commands)
+This step is written for an **Ubuntu-like VM** with `sudo` access.
+### 1) Deploy cluster + apps
+
+```bash
+chmod +x run_kind_cluster.sh
+./run_kind_cluster.sh
 
 
-  #What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
+#What the kind_cluster.sh is doing: Setting up a local Kubernetes cluster with:
 
 1: kind + 1 control-plane + 2 workers
 
