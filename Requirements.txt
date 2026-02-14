@@ -1,11 +1,12 @@
-To create a Kind-Cluster, perform a load test and collect all the data (present in a data folder) through a Linux Machine, following are the Prerequisites:
+To create a Kind-Cluster, perform a load test and collect all the data (present in a data folder) 
+through a Linux Machine, the following are the Prerequisites:
 
-### Host requirements
+Host requirements
 - Linux recommended
 - 8+ CPU cores, 16+ GB RAM recommended (minimum 4 cores / 8 GB)
 - Docker must be running
 
-### Required tools (versions are suggestions)
+Required tools (versions are suggestions)
 - Docker (20+)
 - kubectl (1.26+)
 - kind (0.20+)
@@ -14,10 +15,15 @@ To create a Kind-Cluster, perform a load test and collect all the data (present 
 - jq (optional, but useful)
 
 Verify tools:
-
-```bash
 docker --version
 kubectl version --client
 kind version
 helm version
 istioctl version
+
+For Python code running:
+- Python 3.9+ recommended
+
+Install packages:
+bash
+pip install optuna pandas numpy matplotlib networkx
