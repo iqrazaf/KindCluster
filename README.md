@@ -39,6 +39,34 @@ chmod +x load_test.sh
 
 ./load_test.sh
 If you would like more details about commands, please follow Load_test_script.pdf.
+
+## Repository layout
+
+Expected structure (you can rename folders, but then update the paths at the top of the script).
+
+```text
+├── kind_cluster.sh
+├── load_test.sh
+├── Kind_Cluster_script.pdf
+├── Load_test_script.pdf
+├── cross_app_analysis.py
+├── Optimization.py
+├── Ablation_study.py
+├── baseline_comparison.py
+├── data/
+│   ├── Probability_Table/
+│   │   └── cross_shop_PNS_T3.csv
+│   ├── RT_data/
+│   │   └── RT_T3_S1.csv
+│   ├── stigs_graphs/
+│   │   └── *.gpickle
+│   └── resourse_data/
+│       └── top_pods_baseline.txt
+└── pareto_plot/
+    └── (generated Pareto front images)
+
+``` 
+
 ## ----------------(PART-2-CLuster Optimization Problem) on any Python tool (not on VM)-----------------
 Use the existing collected data in the data and stigs_graphs folder:
 # Service Optimization 
@@ -159,6 +187,4 @@ D) **Reinforcement Learning (RL) baseline**: optimizes latency-only (simple REIN
 - Placement-sensitive latency: edge latency adjusted by colocated/cross-node factors and inflated by interference
 
 -----------------------------------END (C)-----------------------------
-## Repository layout
 
-Expected structure (you can rename folders, but then update the paths at the top of the script)
